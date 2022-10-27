@@ -1,0 +1,45 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+<main class="container">
+    <h1 class="text-center">Projects</h1>
+    <div class="container d-flex flex-row flex-wrap justify-content-evenly">    
+      <!-- Card Items -->
+        <div class="card mt-3" style="width: 18rem;">
+            <img src="/Assets/images/project1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Digital Portfolio</h5>
+              <p class="card-text">As a developer, i am building a digital portfolio by vanilla HTML/CSS/JS. The website contains a lot of animations and it is used for displaying my information and projects</p>
+              <div class="d-flex justify-content-between">
+                <a href="https://nhatphucnguyen.github.io/" target="_blank" >Project Link</a>
+                <a href="https://github.com/NhatPhucNguyen/NhatPhucNguyen.github.io" target="_blank">Github Link</a>
+              </div>              
+            </div>
+        </div>
+
+        <div class="card mt-3" style="width: 18rem;">
+            <img src="/Assets/images/project2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blog App</h5>
+              <p class="card-text">As a developer, i am building a blog app by Python/Django/Bootstrap and applying CRUD methods. This web application is used for creating blog</p>
+              <div class="d-flex justify-content-between align-bottom">
+                <a href="https://blog-simple-app.herokuapp.com/" target="_blank" >Project Link</a>
+                <a href="https://github.com/NhatPhucNguyen/BlogApp" target="_blank" >Github Link</a>
+              </div>              
+            </div>
+        </div>
+
+        <div class="card mt-3" style="width: 18rem;">
+            <img src="/Assets/images/project3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Academic Projects</h5>
+              <p class="card-text">As a developer, i am building a website by vanilla HTML/CSS/JS. This web application is used for containing assignments in the last semester</p>
+              <div class="d-flex justify-content-between align-bottom">
+                <a href="http://studentweb.cencol.ca/pnguy118/" target="_blank" >Project Link</a>
+                <a href="" target="_blank" class="link-disabled">Github Link</a>
+              </div>              
+            </div>
+        </div>
+    </div>
+</main>   
+
+<%- include partials/footer.ejs %>

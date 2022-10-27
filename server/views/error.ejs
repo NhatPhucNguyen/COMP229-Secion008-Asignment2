@@ -1,0 +1,8 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+<main class="container-fluid">
+    <h1><%= message %></h1>
+    <h2><%= error.status %></h2>
+    <pre><%= error.stack %></pre>
+</main>    
+<%- include partials/footer.ejs %> 

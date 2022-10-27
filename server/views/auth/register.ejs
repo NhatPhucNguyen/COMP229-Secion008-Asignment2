@@ -1,0 +1,41 @@
+<%- include ../partials/header.ejs %>
+  <%- include ../partials/main_nav.ejs %>
+
+    <main class="container">
+        <h1 class="text-center"><%= title %> </h1>
+        <form method="POST" class="container border border-3 rounded-3 p-5" style="width:50%">
+            <% if (messages.length > 0) { %>
+                <div class="alert alert-danger" role="alert">
+                  <%= messages %> 
+                </div>
+              <% } %>
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" aria-describedby="username" name="username" required>              
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="email" required>              
+            </div>
+            <div class="mb-3">
+                <label for="contactName" class="form-label">Contact Name</label>
+                <input type="text" class="form-control" id="contactName" name="contactName" aria-describedby="contactName" required>              
+            </div>
+            <div class="mb-3">
+                <label for="contactNumber" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="contactNumber" name="contactNumber" aria-describedby="contactNumber" required>              
+            </div>
+            <div class="link-container text-center">
+                <a href="/login" class="link-info">Already had an account ?</a>
+            </div>  
+            <div class="btn-container d-flex justify-content-around mt-1">
+                <button type="submit" class="btn btn-success">Sign up</button>                
+            </div>            
+        </form>
+    </main>
+    
+<%- include ../partials/footer.ejs %> 

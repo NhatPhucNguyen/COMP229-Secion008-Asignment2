@@ -1,0 +1,34 @@
+<%- include ../partials/header.ejs %>
+  <%- include ../partials/main_nav.ejs %>
+
+    <main class="container">
+        <h1 class="text-center"><%= title %> </h1>
+        <form method="POST" class="container border border-3 rounded-3 p-5" style="width:50%">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" aria-describedby="username" name="username" value="<%= User.username %>" disabled>              
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" value="<%= User.password %>" disabled>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="email" value="<%= User.email %> " required>              
+            </div>
+            <div class="mb-3">
+                <label for="contactName" class="form-label">Contact Name</label>
+                <input type="text" class="form-control" id="contactName" name="contactName" aria-describedby="contactName" value="<%= User.contactName %>" required>              
+            </div>
+            <div class="mb-3">
+                <label for="contactNumber" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="contactNumber" name="contactNumber" aria-describedby="contactNumber" value="<%= User.contactNumber %>" required>              
+            </div>
+            <div class="btn-container d-flex justify-content-around">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <a type="submit" class="btn btn-warning" href="/business-contacts">Cancel</a>
+            </div>            
+        </form>
+    </main>
+    
+<%- include ../partials/footer.ejs %> 

@@ -1,0 +1,36 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+    <main class="container">
+        <h1 class="title text-center">Contact me</h1>
+        <!-- Contact Form -->
+        <div class="container border border-3 rounded-3" style="width: 50%;">
+            <form class="row g-3 p-3" method="post">
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Nhat" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Nguyen" required>
+                </div>
+                <div class="col-12">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="nhatnguyen@example.com" required>
+                </div>
+                <div class="col-12">
+                  <label for="phoneNumber" class="form-label">Contact Number</label>
+                  <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="123-456-7890" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea type="text" class="form-control" name="message" id="message" placeholder="Write your message here..." rows="5" style="resize: none;"></textarea>
+                </div>                
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+              </form>
+        </div>        
+    </main>
+
+<%- include partials/footer.ejs %>

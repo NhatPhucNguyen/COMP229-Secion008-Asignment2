@@ -1,0 +1,5 @@
+/* app.css - Nhat Phuc Nguyen - 301157980 - September/28/2022 */
+.link-disabled{
+    color: gray;
+    pointer-events: none;
+}

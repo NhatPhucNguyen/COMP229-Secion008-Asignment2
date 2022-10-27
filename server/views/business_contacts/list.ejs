@@ -1,0 +1,30 @@
+<%- include ../partials/header.ejs %>
+  <%- include ../partials/main_nav.ejs %>
+
+    <main class="container">
+        <h1 class="text-center"><%- title %> </h1>
+        <table class="table table-primary table-striped mt-5 w-75 container">
+            <thead>
+              <tr>
+                <th scope="col">Contact Name</th>
+                <th scope="col">Contact Number</th>
+                <th scope="col">Email Address</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% for( let count = 0; count < UserList.length; count++ ) { %>
+                    <tr>
+                      <th scope="row"><%= UserList[count].contactName %></th>
+                      <td><%= UserList[count].contactNumber %></td>
+                      <td><%= UserList[count].email %></td>
+                      <td><a href="/business-contacts/edit/<%= UserList[count]._id %> " class="btn btn-success"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                      <td><a href="/business-contacts/delete/<%= UserList[count]._id %>" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                    </tr>                
+                <% } %>
+            </tbody>
+          </table>
+    </main>
+    
+<%- include ../partials/footer.ejs %> 

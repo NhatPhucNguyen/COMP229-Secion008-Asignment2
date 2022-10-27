@@ -1,0 +1,29 @@
+<%- include ../partials/header.ejs %>
+  <%- include ../partials/main_nav.ejs %>
+
+    <main class="container">
+        <h1 class="text-center"><%= title %> </h1>
+        <form method="POST" class="container border border-3 rounded-3 p-5" style="width:50%" autocomplete="off">
+          <% if (messages.length > 0) { %>
+            <div class="alert alert-danger" role="alert">
+              <%= messages %> 
+            </div>
+          <% } %>
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" aria-describedby="username" name="username" required>              
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="link-container text-center">
+              <a href="/register" class="link-info">Haven't created an account ?</a>
+            </div>                        
+            <div class="btn-container d-flex justify-content-around mt-1">
+              <button type="submit" class="btn btn-success">Login</button>                
+          </div>
+        </form>
+    </main>
+    
+<%- include ../partials/footer.ejs %> 
