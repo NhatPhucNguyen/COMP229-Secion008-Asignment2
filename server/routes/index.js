@@ -33,6 +33,6 @@ router.post('/login',indexController.processLoginPage);
 router.get('/register',indexController.displayRegisterPage);
 
 /* POST route for processing register page. */
-router.post('/register',indexController.processRegisterPage);
+// router.post('/register',indexController.processRegisterPage);
 
 module.exports = router;

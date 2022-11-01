@@ -55,6 +55,7 @@ app.use(flash());
 
 //initialize passport
 app.use(passport.initialize());
+//maintain authentication state
 app.use(passport.session());
 
 // create User Model Instance

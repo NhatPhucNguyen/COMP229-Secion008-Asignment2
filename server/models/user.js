@@ -9,7 +9,7 @@ let userModel = mongoose.Schema(
             trim: true,
             required: "username is required"
         },
-        //password: String,
+        //password: String, <- Don't need password field because passport modules will automatically create it.
         email: {
             type: String,
             default: "",
